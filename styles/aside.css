@@ -1,0 +1,17 @@
+.aside{
+  background: url("../assets/imgs/Background.jpg") no-repeat center/cover;
+  border-radius: .75rem;
+  padding: 2rem;
+  height: calc(100vh - 2.5rem);
+
+  .logo{
+    display: block;
+    margin-block: 1rem .5rem;
+    font: var(--logo);
+    color: var(--pink);
+  }
+
+  p.text-heading{
+    font-weight: 300;
+  }
+}
