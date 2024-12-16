@@ -1,0 +1,17 @@
+.main{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+
+  padding-block: 5rem;
+}
+
+.container{
+  max-width: 35rem;
+  margin-inline: auto;
+
+  h1{
+    font: var(--heading-md);
+    margin-bottom: 2.5rem;
+  }
+}

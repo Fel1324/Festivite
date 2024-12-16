@@ -1,3 +1,15 @@
 .text-heading{
   color: var(--text-heading);
 }
+
+.text-body{
+  color: var(--text-body);
+}
+
+.legend{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  margin-bottom: 1.5rem;
+}
