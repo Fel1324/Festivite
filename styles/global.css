@@ -60,13 +60,23 @@ html, body{
 
 body{
   background-color: var(--shape-background);
-  overflow: hidden;
   font: var(--body-md);
 }
 
 #app{
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "aside main";
   gap: 1.25rem;
+
   padding: 1.25rem;
+}
+
+input::placeholder,
+textarea::placeholder{
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--input-placeholder);
 }

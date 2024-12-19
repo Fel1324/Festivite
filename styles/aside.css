@@ -1,8 +1,12 @@
 .aside{
   background: url("../assets/imgs/Background.jpg") no-repeat center/cover;
   border-radius: .75rem;
-  padding: 2rem;
   height: calc(100vh - 2.5rem);
+  padding: 2rem;
+  
+  grid-area: aside;
+  position: sticky;
+  top: 1.25rem;
 
   .logo{
     display: block;
