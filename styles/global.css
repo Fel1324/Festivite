@@ -72,11 +72,3 @@ body{
 
   padding: 1.25rem;
 }
-
-input::placeholder,
-textarea::placeholder{
-  font-family: var(--body-font);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--input-placeholder);
-}

@@ -5,38 +5,3 @@
 .text-body{
   color: var(--text-body);
 }
-
-.legend{
-  display: flex;
-  align-items: center;
-  gap: .75rem;
-
-  margin-bottom: 1.5rem;
-}
-
-.input-group{
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
-}
-
-.default-label{
-  font-size: .875rem;
-  font-weight: 400;
-}
-
-.default-input{
-  background-color: var(--input-base);
-  color: var(--text-heading);
-  border: .0625rem solid var(--input-stroke);
-  border-radius: .5rem;
-
-  &:active, &:focus{
-    outline: .0625rem solid var(--brand-light);
-    border-color: var(--brand-light);
-  }
-}
-
-.input-padding{
-  padding: .8125rem 1rem;
-}

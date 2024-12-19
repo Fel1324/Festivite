@@ -1,0 +1,110 @@
+input{
+  min-height: 3rem;
+}
+
+textarea{
+  min-width: 100%;
+  max-width: 35rem;
+  min-height: 8.5rem;
+  padding: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder{
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--input-placeholder);
+}
+
+input[type="datetime-local"]{
+  
+
+  &::-webkit-calendar-picker-indicator{
+    opacity: 0;
+  }
+}
+
+.input-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.default-label{
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.default-input{
+  background-color: var(--input-base);
+  color: var(--text-heading);
+  border: .0625rem solid var(--input-stroke);
+  border-radius: .5rem;
+
+  &:active, &:focus{
+    outline: .0625rem solid var(--brand-light);
+    border-color: var(--brand-light);
+  }
+}
+
+.input-padding{
+  padding: .8125rem 1rem;
+}
+
+.radio-wrapper{
+  display: flex;
+  gap: .25rem;
+
+  height: 100%;
+  overflow: hidden;
+  padding: .25rem;
+
+  &:active{
+    outline: 0;
+    border-color: var(--input-stroke);
+  }
+
+  .radio-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    flex: 1;
+
+    position: relative;
+    border-radius: .3125rem;
+
+    &:has(:checked), &:has(:focus), &:has(:hover){
+      background-color: var(--shape-button);
+
+      svg path{
+        fill: var(--brand-light);
+      }
+
+      label{
+        font: var(--body-sm);
+      }
+    }
+
+    & input[type="radio"]{
+      all: unset;
+      outline: none;
+      position: absolute;
+      inset: 0;
+    }
+
+    & label{
+      font-size: .875rem;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
