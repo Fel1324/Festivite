@@ -1,3 +1,8 @@
+label{
+  font-size: .875rem;
+  font-weight: 400;
+}
+
 input{
   min-height: 3rem;
 }
@@ -18,11 +23,18 @@ textarea::placeholder{
 }
 
 input[type="datetime-local"]{
-  
-
   &::-webkit-calendar-picker-indicator{
     opacity: 0;
   }
+}
+
+input[type="radio"]{
+  all: unset;
+  outline: none;
+  cursor: pointer;
+
+  position: absolute;
+  inset: 0;
 }
 
 .input-wrapper{
@@ -58,7 +70,7 @@ input[type="datetime-local"]{
   padding: .8125rem 1rem;
 }
 
-.radio-wrapper{
+.radio-wrapper-type{
   display: flex;
   gap: .25rem;
 
@@ -71,7 +83,7 @@ input[type="datetime-local"]{
     border-color: var(--input-stroke);
   }
 
-  .radio-content{
+  .radio-content-type{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,19 +104,54 @@ input[type="datetime-local"]{
         font: var(--body-sm);
       }
     }
+  }
+}
 
-    & input[type="radio"]{
-      all: unset;
-      outline: none;
-      position: absolute;
-      inset: 0;
+.radio-wrapper-color{
+  display: flex;
+  gap: .75rem;
+
+  .radio-content-color{
+    border-radius: 50%;
+    border: .25rem solid var(--shape-button);
+    outline: .125rem solid var(--shape-button);
+
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    
+    &:has(:checked), &:has(:focus), &:has(:hover){
+      outline-color: var(--brand-light);
+    }
+  }
+}
+
+.radio-wrapper-theme{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.375rem, 1fr));
+  gap: .5rem;
+
+  .radio-content-theme{
+    display: grid;
+    text-align: center;
+    position: relative;
+
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+    outline: .0625rem solid var(--input-stroke);
+    padding: .25rem .25rem .5rem;
+
+    &:has(:checked), &:has(:focus), &:has(:hover){
+      outline: .125rem solid var(--brand-light);
     }
 
-    & label{
-      font-size: .875rem;
-      font-weight: 400;
-      display: flex;
-      align-items: center;
+    img{
+      border-radius: .25rem;
+      width: 100%;
+    }
+
+    label{
+      margin-top: .5rem;
     }
   }
 }

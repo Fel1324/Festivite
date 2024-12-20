@@ -17,7 +17,7 @@
   --brand-dark: #1D6FB6;
 
   --purple: #B259FF;
-  --fuschia: #FF59F9;
+  --fuchsia: #FF59F9;
   --pink: #FF598B;
   --orange: #FF8B59;
   --yellow: #FFCD59;
@@ -71,4 +71,9 @@ body{
   gap: 1.25rem;
 
   padding: 1.25rem;
+}
+
+img{
+  max-width: 100%;
+  object-fit: cover;
 }
