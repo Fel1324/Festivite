@@ -38,6 +38,10 @@ input[type="radio"]{
   gap: 1rem;
 }
 
+#personalization .input-wrapper{
+  grid-template-columns: 1fr 2fr;
+}
+
 .input-group{
   display: flex;
   flex-direction: column;
@@ -96,7 +100,8 @@ input[type="radio"]{
       }
 
       label{
-        font: var(--body-sm);
+        color: var(--text-heading);
+        font-weight: 500;
       }
     }
   }
@@ -163,6 +168,7 @@ input[type="radio"]{
     background-color: var(--input-base);
     outline: .0625rem solid var(--input-stroke);
     border-radius: 3.125rem;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
@@ -199,5 +205,55 @@ input[type="radio"]{
       background-color: var(--text-heading);
       transform: translateX(142%);
     }
+  }
+}
+
+.file-wrapper{
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: .75rem;
+  position: relative;
+
+  .file-content{
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+    padding-inline: .75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    width: 7.5rem;
+    height: 2.5rem;
+
+    &:hover, &:focus-within{
+      filter: brightness(1.2);
+
+      svg path{
+        fill: var(--brand-light);
+      }
+    }
+
+    input[type="file"]{
+      all: unset;
+      opacity: 0;
+      cursor: pointer;
+
+      position: absolute;
+      inset: 0;
+    }
+
+    label{
+      font: var(--body-sm);
+    }
+  }
+
+  #file-message{
+    color: var(--input-placeholder);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
