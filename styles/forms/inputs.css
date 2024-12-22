@@ -229,7 +229,7 @@ input[type="radio"]{
     height: 2.5rem;
 
     &:hover, &:focus-within{
-      filter: brightness(1.2);
+      outline: .125rem solid var(--brand-light);
 
       svg path{
         fill: var(--brand-light);
@@ -255,5 +255,45 @@ input[type="radio"]{
     font-family: var(--body-font);
     font-size: 1rem;
     font-weight: 400;
+  }
+}
+
+.checkbox-wrapper{
+  border-top: .0625rem solid var(--input-stroke);
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+
+  .checkbox-group{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    height: 1.75rem;
+
+    input[type="checkbox"]{
+      all: unset;
+      width: 1.25rem;
+      height: 1.25rem;
+
+      background-color: var(--input-base);
+      outline: .0625rem solid var(--input-stroke);
+      border-radius: .25rem;
+      cursor: pointer;
+
+      &:checked{
+        background: url("../../assets/icons/check.svg") no-repeat center/contain;
+        outline-color: var(--brand-light);
+      }
+
+      &:hover, &:focus{
+        outline-color: var(--brand-light);
+      }
+    }
+
+    label a{
+      color: var(--brand-light);
+      font-weight: 600;
+    }
   }
 }
