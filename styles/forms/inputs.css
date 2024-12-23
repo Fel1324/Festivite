@@ -136,6 +136,7 @@ input[type="radio"]{
 
 .radio-wrapper-color{
   display: flex;
+  flex-wrap: wrap;
   gap: .75rem;
 
   .radio-content-color{
@@ -302,12 +303,12 @@ input[type="radio"]{
     display: flex;
     align-items: center;
     gap: .75rem;
-    height: 1.75rem;
 
     input[type="checkbox"]{
       all: unset;
       width: 1.25rem;
       height: 1.25rem;
+      margin-block: .25rem;
 
       background-color: var(--input-base);
       outline: .0625rem solid var(--input-stroke);
@@ -363,4 +364,10 @@ input[type="radio"]{
   display: flex;
   align-items: center;
   gap: .5rem;
+}
+
+@media screen and (max-width: 630px){
+  .input-wrapper, #personalization .input-wrapper{
+    grid-template-columns: 1fr;
+  }
 }

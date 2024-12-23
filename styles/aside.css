@@ -19,3 +19,12 @@
     font-weight: 300;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .aside{
+    position: static;
+    background-position: top;
+    text-align: center;
+    padding-top: 6rem;
+  }
+}

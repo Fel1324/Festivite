@@ -77,3 +77,12 @@ img{
   max-width: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 950px) {
+  #app{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "aside"
+    "main";
+  }
+}
