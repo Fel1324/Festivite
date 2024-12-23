@@ -32,33 +32,59 @@
 
               <div class="form-container gap-16">
                 <div class="input-group">
-                  <label class="text-body default-label" for="title">Título</label>
+                  <label class="text-body default-label mb-12" for="title">Título</label>
                   <input
                     class="default-input input-padding"
-                    type="text" name="title" id="title"
-                    placeholder="Nome do evento" minlength="8"
-                    maxlength="160" required
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="Nome do evento"
+                    required
                   >
+                  <small id="error">
+                    <img src="./assets/icons/alert.svg" alt="">
+                    Insira um título correto
+                  </small>
                 </div>
 
                 <div class="input-wrapper">
                   <div class="input-group">
-                    <label class="text-body default-label" for="start">Início</label>
-                    <input class="default-input input-padding" type="datetime-local" name="start" id="start">
+                    <label class="text-body default-label mb-12" for="start">Início</label>
+                    <input
+                      class="default-input input-padding"
+                      type="datetime-local"
+                      name="start"
+                      id="start"
+                      required
+                    >
+                    <small id="error">
+                      <img src="./assets/icons/alert.svg" alt="">
+                      Insira um início correto
+                    </small>
                   </div>
                   <div class="input-group">
-                    <label class="text-body default-label" for="end">Fim</label>
-                    <input class="default-input input-padding" type="datetime-local" name="end" id="end">
+                    <label class="text-body default-label mb-12" for="end">Fim</label>
+                    <input
+                      class="default-input input-padding"
+                      type="datetime-local"
+                      name="end"
+                      id="end"
+                      required
+                    >
+                    <small id="error">
+                      <img src="./assets/icons/alert.svg" alt="">
+                      Insira um fim correto
+                    </small>
                   </div>
                 </div>
 
                 <div class="input-wrapper">
                   <div class="input-group">
-                    <label class="text-body default-label">Tipo</label>
+                    <label class="text-body default-label mb-12">Tipo</label>
 
                     <div class="radio-wrapper-type default-input">
                       <div class="radio-content-type">
-                        <input type="radio" name="type" id="in-person" value="in-person">
+                        <input type="radio" name="type" id="in-person" value="in-person" checked>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g clip-path="url(#clip0_5102_392)">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33337 1.83331C5.11236 1.83331 4.9004 1.92111 4.74412 2.07739C4.58784 2.23367 4.50004 2.44563 4.50004 2.66665V14.1666H11.5V2.66665C11.5 2.44563 11.4122 2.23367 11.256 2.07739C11.0997 1.92111 10.8877 1.83331 10.6667 1.83331H5.33337ZM12.5 5.49998V2.66665C12.5 2.18042 12.3069 1.7141 11.9631 1.37028C11.6193 1.02647 11.1529 0.833313 10.6667 0.833313H5.33337C4.84714 0.833313 4.38083 1.02647 4.03701 1.37028C3.69319 1.7141 3.50004 2.18042 3.50004 2.66665V7.49998H2.66671C2.18048 7.49998 1.71416 7.69313 1.37034 8.03695C1.02653 8.38077 0.833374 8.84708 0.833374 9.33331V13.3333C0.833374 13.8195 1.02653 14.2859 1.37034 14.6297C1.71416 14.9735 2.18048 15.1666 2.66671 15.1666H13.3334C13.8196 15.1666 14.2859 14.9735 14.6297 14.6297C14.9736 14.2859 15.1667 13.8195 15.1667 13.3333V7.33331C15.1667 6.84708 14.9736 6.38077 14.6297 6.03695C14.2859 5.69313 13.8196 5.49998 13.3334 5.49998H12.5ZM12.5 6.49998V14.1666H13.3334C13.5544 14.1666 13.7663 14.0788 13.9226 13.9226C14.0789 13.7663 14.1667 13.5543 14.1667 13.3333V7.33331C14.1667 7.1123 14.0789 6.90034 13.9226 6.74406C13.7663 6.58778 13.5544 6.49998 13.3334 6.49998H12.5ZM3.50004 8.49998H2.66671C2.44569 8.49998 2.23373 8.58778 2.07745 8.74406C1.92117 8.90034 1.83337 9.1123 1.83337 9.33331V13.3333C1.83337 13.5543 1.92117 13.7663 2.07745 13.9226C2.23373 14.0788 2.44569 14.1666 2.66671 14.1666H3.50004V8.49998ZM6.16671 3.99998C6.16671 3.72384 6.39056 3.49998 6.66671 3.49998H9.33337C9.60952 3.49998 9.83337 3.72384 9.83337 3.99998C9.83337 4.27612 9.60952 4.49998 9.33337 4.49998H6.66671C6.39056 4.49998 6.16671 4.27612 6.16671 3.99998ZM6.16671 6.66665C6.16671 6.3905 6.39056 6.16665 6.66671 6.16665H9.33337C9.60952 6.16665 9.83337 6.3905 9.83337 6.66665C9.83337 6.94279 9.60952 7.16665 9.33337 7.16665H6.66671C6.39056 7.16665 6.16671 6.94279 6.16671 6.66665ZM6.16671 9.33331C6.16671 9.05717 6.39056 8.83331 6.66671 8.83331H9.33337C9.60952 8.83331 9.83337 9.05717 9.83337 9.33331C9.83337 9.60945 9.60952 9.83331 9.33337 9.83331H6.66671C6.39056 9.83331 6.16671 9.60945 6.16671 9.33331ZM6.16671 12C6.16671 11.7238 6.39056 11.5 6.66671 11.5H9.33337C9.60952 11.5 9.83337 11.7238 9.83337 12C9.83337 12.2761 9.60952 12.5 9.33337 12.5H6.66671C6.39056 12.5 6.16671 12.2761 6.16671 12Z" fill="#869198"/>
@@ -83,14 +109,29 @@
                   </div>
 
                   <div class="input-group">
-                    <label class="text-body default-label" for="local">Local</label>
-                    <input class="default-input input-padding" type="text" name="local" id="local" placeholder="Link ou endereço">
+                    <label class="text-body default-label mb-12" for="local">Local</label>
+                    <input
+                      class="default-input input-padding"
+                      type="text"
+                      name="local"
+                      id="local"
+                      placeholder="Link ou endereço"
+                      required
+                    >
+                    <small id="error">
+                      <img src="./assets/icons/alert.svg" alt="">
+                      Insira um local correto
+                    </small>
                   </div>
                 </div>
 
                 <div class="input-group">
-                  <label class="text-body default-label" for="description">Descrição</label>
-                  <textarea class="default-input" name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                  <label class="text-body default-label mb-12" for="description">Descrição</label>
+                  <textarea class="default-input" name="description" id="description" placeholder="Escreva sobre os detalhes do evento" required></textarea>
+                  <small id="error">
+                    <img src="./assets/icons/alert.svg" alt="">
+                    Insira um local correto
+                  </small>
                 </div>
               </div>
             </fieldset>
@@ -103,11 +144,11 @@
 
               <div class="form-container gap-28">
                 <div class="input-group">
-                  <label class="text-heading default-label mb-4">Cor principal</label>
+                  <label class="text-heading default-label mb-16">Cor principal</label>
 
                   <div class="radio-wrapper-color">
                     <div class="radio-content-color brand-light">
-                      <input type="radio" name="color" id="light-blue" value="light-blue">
+                      <input type="radio" name="color" id="light-blue" value="light-blue" checked>
                     </div>
 
                     <div class="radio-content-color navy">
@@ -153,11 +194,11 @@
                 </div>
 
                 <div class="input-group">
-                  <label class="text-heading default-label mb-4">Tema do evento</label>
+                  <label class="text-heading default-label mb-16">Tema do evento</label>
 
                   <div class="radio-wrapper-theme">
                     <div class="radio-content-theme">
-                      <input type="radio" name="theme" id="birthday" value="birthday">
+                      <input type="radio" name="theme" id="birthday" value="birthday" checked>
                       <img src="./assets/imgs/Image01.png" alt="Aniversário">
                       <label class="text-heading default-label" for="birthday">Aniversário</label>
                     </div>
@@ -220,7 +261,7 @@
 
                 <div class="input-wrapper">
                   <div class="input-group">
-                    <label class="text-body default-label">Estilo</label>
+                    <label class="text-body default-label mb-12">Estilo</label>
 
                     <div class="switch-wrapper">
                       <input type="checkbox" name="style" id="style" value="Escuro">
@@ -229,19 +270,22 @@
                   </div>
 
                   <div class="input-group">
-                    <label class="text-body default-label">Foto de capa</label>
+                    <label class="text-body default-label mb-12">Foto de capa</label>
                     
                     <div class="file-wrapper">
                       <div class="file-content">
-                        <input type="file" name="photo" id="photo">
+                        <input type="file" name="photo" id="photo" required>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64645 1.64645C7.84171 1.45118 8.15829 1.45118 8.35355 1.64645L11.6869 4.97978C11.8821 5.17504 11.8821 5.49162 11.6869 5.68689C11.4916 5.88215 11.175 5.88215 10.9798 5.68689L8.5 3.20711V10C8.5 10.2761 8.27614 10.5 8 10.5C7.72386 10.5 7.5 10.2761 7.5 10V3.20711L5.02022 5.68689C4.82496 5.88215 4.50838 5.88215 4.31311 5.68689C4.11785 5.49162 4.11785 5.17504 4.31311 4.97978L7.64645 1.64645ZM2 9.5C2.27614 9.5 2.5 9.72386 2.5 10V12.6667C2.5 12.8877 2.5878 13.0996 2.74408 13.2559C2.90036 13.4122 3.11232 13.5 3.33333 13.5H12.6667C12.8877 13.5 13.0996 13.4122 13.2559 13.2559C13.4122 13.0996 13.5 12.8877 13.5 12.6667V10C13.5 9.72386 13.7239 9.5 14 9.5C14.2761 9.5 14.5 9.72386 14.5 10V12.6667C14.5 13.1529 14.3068 13.6192 13.963 13.963C13.6192 14.3068 13.1529 14.5 12.6667 14.5H3.33333C2.8471 14.5 2.38079 14.3068 2.03697 13.963C1.69315 13.6192 1.5 13.1529 1.5 12.6667V10C1.5 9.72386 1.72386 9.5 2 9.5Z" fill="#869198"/>
                         </svg>
                         <label class="text-heading" for="photo">Selecionar</label>
-                      </div>
-
+                      </div>                      
                       <span id="file-message">Nenhum arquivo selecionado</span>
                     </div>
+                    <small id="error">
+                      <img src="./assets/icons/alert.svg" alt="">
+                      Insira um arquivo correto
+                    </small>
                   </div>
                 </div>
               </div>
@@ -255,19 +299,52 @@
 
               <div class="form-container gap-16">
                 <div class="input-group">
-                  <label class="text-body default-label" for="name">Nome</label>
-                  <input class="default-input input input-padding" type="text" name="name" id="name" placeholder="Nome completo">
+                  <label class="text-body default-label mb-12" for="name">Nome</label>
+                  <input
+                    class="default-input input input-padding"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Nome completo"
+                    required
+                  >
+                  <small id="error">
+                    <img src="./assets/icons/alert.svg" alt="">
+                    Insira um nome completo correto
+                  </small>
                 </div>
 
                 <div class="input-wrapper mb-32">
                   <div class="input-group">
-                    <label class="text-body default-label" for="email">E-mail</label>
-                    <input class="default-input input-padding" type="email" name="email" id="email" placeholder="exemplo@email.com">
+                    <label class="text-body default-label mb-12" for="email">E-mail</label>
+                    <input
+                      class="default-input input-padding"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="exemplo@email.com"
+                      required
+                    >
+                    <small id="error">
+                      <img src="./assets/icons/alert.svg" alt="">
+                      Insira um E-mail correto
+                    </small>
                   </div>
 
                   <div class="input-group">
-                    <label class="text-body default-label" for="tel">Telefone</label>
-                    <input class="default-input input-padding" type="tel" name="tel" id="tel" placeholder="(99) 99999-9999">
+                    <label class="text-body default-label mb-12" for="tel">Telefone</label>
+                    <input
+                      class="default-input input-padding"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="(99) 99999-9999"
+                      required
+                    >
+                    <small id="error">
+                      <img src="./assets/icons/alert.svg" alt="">
+                      Insira um telefone correto
+                    </small>
                   </div>
                 </div>
 
