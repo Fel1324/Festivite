@@ -297,7 +297,7 @@ input[type="radio"]{
   padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: .375rem;
 
   .checkbox-group{
     display: flex;
@@ -369,5 +369,38 @@ input[type="radio"]{
 @media screen and (max-width: 630px){
   .input-wrapper, #personalization .input-wrapper{
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .file-wrapper #file-message{
+    font-size: .875rem;
+  }
+
+  .checkbox-wrapper{
+    gap: 1rem;
+  
+    .checkbox-group{  
+      input[type="checkbox"]{
+        width: .875rem;
+        height: .875rem;
+      }
+  
+      label{
+        font-size: .75rem;
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: 510px){
+  .checkbox-wrapper{
+    gap: 1.25rem;
+
+    .checkbox-group{
+      flex-direction: column;
+      align-items: start;
+      gap: .25rem;
+    }
   }
 }

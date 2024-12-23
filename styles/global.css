@@ -78,7 +78,7 @@ img{
   object-fit: cover;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 950px){
   #app{
     grid-template-columns: 1fr;
     grid-template-areas: 

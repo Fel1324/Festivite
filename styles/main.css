@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 630px){
   .main{
     padding-inline: 1.25rem;
   }
